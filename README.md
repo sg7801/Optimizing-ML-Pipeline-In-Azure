@@ -35,6 +35,6 @@ Hyperparameters :
 
 # Future work
 
-The major areas of future improvement involve the running of the model for much longer time to get even better accuracy. Further, We can implement and use various other algorithms other than Logistic Regression which might provide us better results. Along with that, we could have left the task of cleaning data on the run itself rather than specifically creating a function clean_data in train.py in the project. 
+The major areas of future improvement involve the running of the model for much longer time to get even better accuracy. Further, We can implement and use various other algorithms other than Logistic Regression and different parameters in AutoML which might provide us better results. Along with that, we can leave the task of cleaning data on the run itself rather than specifically creating a function clean_data in train.py in the project. 
 
 # Proof of cluster clean up
