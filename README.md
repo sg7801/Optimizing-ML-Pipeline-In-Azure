@@ -13,7 +13,7 @@ The Best Model of Hyperdrive Run had accuracy of -- and that of Auto ML Run had 
 
 I started with the Training Script called train.py which used the Scikit-Learn Logistic Regression. It starts with a clean_data function that cleans the missing values from the dataset and one hot encodes data. I passed the required parameters and then imported the data from the specific URL using TabularDatasetFactory. Then, I split the data into the train and test sets. 
 
-Further, in the udacity-project.ipynb file, I specified the Parameter Sampler - RandomParameterSampling that used the discrete data for hyperparameters. Then I specified the BanditPolicy for early termination. Finally after uploading the data to datastore I ran the Hyperdrive. We used ACCURACY as the primary metric.
+Further, in the udacity-project.ipynb file, I specified the Parameter Sampler - RandomParameterSampling that used the discrete data for hyperparameters. Then I specified the BanditPolicy for early termination. Finally after uploading the data to datastore I ran the Hyperdrive using ACCURACY as the primary metric.
 
 2. What are the benefits of the parameter sampler you chose?
 
