@@ -49,7 +49,7 @@ def main():
     link='https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv'
     ds = TabularDatasetFactory.from_delimited_files(path=link)
     x, y = clean_data(ds)
-    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.20, random_state=42)
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.27)
 
     run = Run.get_context()
     
