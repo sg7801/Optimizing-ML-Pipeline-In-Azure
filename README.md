@@ -28,11 +28,33 @@ In this project we used the BanditPolicy as the early stopping policy with param
 The search termination takes place if the run does not fall in slack factor or slack amount of evaluation metric range with respect to best performing run.
 In this project, the value of the **slack_factor = 0.02**. Starting at specified evaluation_interval, any run resulting in smaller value of primary metric gets cancelled automatically.
 
+**Runs of Hyperdrive**
+
+![Hyperdrive Runs](https://user-images.githubusercontent.com/61888364/99191995-559f1a00-2796-11eb-949d-fe152c2c5985.png)
+
+**Visualisation of Accuracy**
+
+![Hyperdrive Run](https://user-images.githubusercontent.com/61888364/99191951-1670c900-2796-11eb-9675-b944bbfd16f1.png)
+
 # AutoML
 
 Firstly, We used the **TabularDatasetFactory** to create a dataset from the provided link and then used the **clean_data function** to clean and one-hot encode data. Then we split the train and test sets and upload them to datastore.
 Then, we define the task as **Classification** with **accurcay** as primary metric and **5 n-cross validations**. 
 After the submission, we found that **VotingEnsemble Algorithm** resulted with the best model with **accuracy 0.91752, precision_score_weighted 0.9142882464020461 and precision_score_micro 0.9175154736784336**. Enabling of the automatic featurisation resulted in **Data guardrails** including Class balancing detection, Missing feature values imputation and High cardinality feature detection that checks over the input data to ensure quality in training the model.
+
+**Runs**
+
+![AutoML Runs](https://user-images.githubusercontent.com/61888364/99192039-a31b8700-2796-11eb-8b06-f23bceda752e.png)
+
+**Metrics**
+
+![AutoML Metrics](https://user-images.githubusercontent.com/61888364/99192071-d3fbbc00-2796-11eb-847f-72caefd64930.png)
+
+**Explainations(preview)**
+
+![AutoML Explaination](https://user-images.githubusercontent.com/61888364/99192099-00afd380-2797-11eb-96c0-91601f0b1412.png)
+
+![AutoML Explaination 2](https://user-images.githubusercontent.com/61888364/99192106-0e655900-2797-11eb-998a-5cca39e140eb.png)
 
 # Pipeline comparison
 
@@ -45,3 +67,9 @@ We can implement and use various other algorithms other than Logistic Regression
 We can try different values of n-cross validation, '--C' and '--max_iter' for better results.
 
 # Proof of cluster clean up
+
+**Images of cluster marked for deletion:**
+
+![Proof](https://user-images.githubusercontent.com/61888364/99192151-48365f80-2797-11eb-9c16-183421167348.png)
+
+![Proof2](https://user-images.githubusercontent.com/61888364/99192155-54bab800-2797-11eb-8bb9-270c39576fd9.png)
