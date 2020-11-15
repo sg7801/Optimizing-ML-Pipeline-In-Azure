@@ -3,7 +3,7 @@
 This project is part of the Udacity Azure ML Nanodegree. In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model. This model is then compared to an Azure AutoML run.
 
 # Summary
-This project is based on the Bank Marketing Dataset of a Banking Institution, which contains all information of previous marketing campaigns. Hence, with the help of Azure ML,we seek to predict if a customer will subscribe to the Term Deposit or not by comparing the accuracy of Hyperdrive and Auto ML .
+This project is based on the Bank Marketing Dataset of a Banking Institution, which contains all information of previous marketing campaigns. Hence, with the help of Azure ML we seek to predict if a customer will subscribe to the Term Deposit or not by comparing the accuracy of Hyperdrive and Auto ML .
 
 The Best Model of Hyperdrive Run had accuracy of **0.9142407** and that of Auto ML Run had accuracy of **0.91752**. Out of the two methods we concluded that the best performing was **VotingEnsemble Algorithm with 100% Sampling** by AutoML Run.
 
