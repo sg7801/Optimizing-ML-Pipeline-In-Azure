@@ -16,7 +16,7 @@ I started with the Training Script - train.py which used the Scikit-Learn Logist
 Further, in the udacity-project.ipynb file, I specified the Parameter Sampler - **RandomParameterSampling** that used the discrete data for hyperparameters. Then I specified the **BanditPolicy** for early termination. Finally after uploading the data to datastore I ran the Hyperdrive using Accuracy as the primary metric.
 The BanditPolicy was chosen as the Early Stopping Policy with **slack_factor = 0.02 and evaluation_interval = 1.**
 
-The Best Model of Hyperdrive had **Accuracy of 0.9142407, Regularization Strength of 0.013738337356206531 and Max iterations of 100.** This resulted in value of **--C = 0.013738337356206531 and '--max_iter' = 100**.
+The Best Model of Hyperdrive had **Accuracy of 0.9142407, Regularization Strength of 0.013738337356206531 and Max iterations of 100.** This resulted in value of **'--C'  0.013738337356206531 and '--max_iter' = 100**.
 
 **2. What are the benefits of the parameter sampler you chose?**
 
@@ -26,7 +26,7 @@ The Parameter Sampler chosen was - RandomParameterSampling. The major edge it ha
 
 In this project we used the BanditPolicy as the early stopping policy with parameters evaluation_interval, slack_factor, slack_amount and delay_evaluation.
 The search termination takes place if the run does not fall in slack factor or slack amount of evaluation metric range with respect to best performing run.
-In this project, the value of the **slack_factor = 0.02.**. Starting at specified evaluation_interval, any run resulting in smaller value of primary metric gets cancelled automatically.
+In this project, the value of the **slack_factor = 0.02**. Starting at specified evaluation_interval, any run resulting in smaller value of primary metric gets cancelled automatically.
 
 # AutoML
 
